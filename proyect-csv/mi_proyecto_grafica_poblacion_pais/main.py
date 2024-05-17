@@ -1,15 +1,23 @@
 import os; import re
 os.system('clear')
 
-# # input
-# country = input('Write a country: ')
-pattern = (r',\d{1,}')
+country = input('Write a country: ')
+
+pattern1 = re.compile(r'^(\s\w{3},)([\w\s]*)')
+pattern2 = re.compile(r'\d{0,20}\.?\d{1,20}')
 
 
 # Years from head and find the population in the input country
 with open('./data.csv', 'r') as f:
     v_line = [line for line in f]
 
+with open('./data.csv', 'r') as f:
+    for line in f:
+        res = re.match(pattern1, line)
+        if res:
+            if res.group(2) == country:
+                res2 = re.findall(pattern2, line)
+    print(res2)
 
 # Extract the head
 head = iter(v_line)
