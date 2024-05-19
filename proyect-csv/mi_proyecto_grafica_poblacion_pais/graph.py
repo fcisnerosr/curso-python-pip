@@ -5,14 +5,15 @@ class Graph():
         self.years = years
         self.population = population
         
-    def bar(years, population):
-        pass
-        # fig, ax = plt.subplots()
-        ## Pendiente de hacer objetos bar
-        
-
-    def pie(years, population):
+    def bar(self):
         fig, ax = plt.subplots()
-        ax.pie(years, population = population)
+        ax.bar(self.years, self.population)
         plt.grid()
         plt.show()
+        
+    # def pie(self):
+    #     fig, ax = plt.subplots()
+    #     ax.pie(self.years, labels = self.population)
+    #     plt.grid()
+    #     plt.show()
+        
