@@ -13,7 +13,8 @@ class Graph():
         plt.grid()
         plt.show()
         
-    def pie(self):
+    def pie(self, country):
+        
         fig, ax = plt.subplots()
         ax.pie(self.years, labels = self.population)
         plt.grid()

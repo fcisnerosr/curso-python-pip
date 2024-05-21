@@ -8,7 +8,8 @@ def run():
     country = 'Mexico'
     years, population = population_years(country)
     popu_graph = Graph(years, population)
-    popu_graph.bar()
+    # popu_graph.bar()
+    popu_graph.pie(country)
         
 if __name__ == '__main__':
     run()
