@@ -5,12 +5,10 @@ os.system('clear')
 
 def run():
     # country = input('Write a country: ')
-    country = 'Afghanistan'
+    country = 'Mexico'
     years, population = population_years(country)
-    population.sort()
-    print(population)
-    # popu_graph = Graph(years, population)
-    # popu_graph.bar()
+    popu_graph = Graph(years, population)
+    popu_graph.bar()
         
 if __name__ == '__main__':
     run()

@@ -14,7 +14,8 @@ def population_years(country):
                 if res.group(2) == country:
                     population = re.findall(pattern2, line)
                     population = population[1:9]
-                    population.sort()
+        population = [int(data) for data in population]
+        population.sort()
 
     # Extract the head
     head = iter(v_line)
@@ -25,7 +26,6 @@ def population_years(country):
     years   = re.findall(pattern, head)
     years   = [int(year) for year in years]
     years.sort()
-    years   = [str(year) for year in years]
     return years, population
 
 if __name__ == '__main__':
