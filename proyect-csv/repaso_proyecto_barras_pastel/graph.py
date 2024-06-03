@@ -13,9 +13,9 @@ class Graph():
         plt.grid()
         plt.show()
         
-    # def pie(self):
-    #     fig, ax = plt.subplots()
-    #     ax.pie(self.years, labels = self.population)
-    #     plt.grid()
-    #     plt.show()
+    def pie(self):
+        fig, ax = plt.subplots()
+        ax.pie(self.years, labels = self.years)
+        plt.grid()
+        plt.show()
         

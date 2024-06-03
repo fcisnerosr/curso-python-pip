@@ -17,7 +17,7 @@ def population_years(country):
         # print(population)
         # population = [int(data) for data in population]
         population.reverse()
-        print(population)
+        # print(population)
 
     # Extract the head
     head = iter(v_line)

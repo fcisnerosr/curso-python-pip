@@ -7,10 +7,11 @@ def run():
     # country = input('Write a country: ')
     country = 'Afghanistan'
     years, population = population_years(country)
-    print(years)
-    print(population)
+    # print(years)
+    # print(population)
     popu_graph = Graph(years, population)
-    popu_graph.bar()
+    # popu_graph.bar()
+    popu_graph.pie()
         
 if __name__ == '__main__':
     run()
